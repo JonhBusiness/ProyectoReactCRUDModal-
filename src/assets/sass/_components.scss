@@ -1,0 +1,34 @@
+@use "stylesAnimate";
+.menu {
+  @include stylesAnimate.Nav();
+}
+.navbar-nav {
+  @include stylesAnimate.LinkEfect();
+}
+.btn-delete {
+  @include stylesAnimate.Delete();
+}
+.btn-edit {
+  @include stylesAnimate.Edit();
+}
+.btn-add {
+  @include stylesAnimate.Add();
+}
+.back {
+  @include stylesAnimate.Fondo();
+}
+.form-group {
+  @include stylesAnimate.Input();
+}
+.cuadro {
+  //background-color: #10111F;
+  border-radius: 10%;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 0 5px blue;
+  transition: transform 0.5s;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
